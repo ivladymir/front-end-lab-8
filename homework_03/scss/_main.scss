@@ -1,0 +1,131 @@
+$contentBackground: null !default;
+
+
+
+/////////////////////////////////////////////brief class
+
+@mixin brief($width, $quote){
+	background-color: $quote;
+	width: $width;
+	display:$display;
+	padding: $padding*2;
+	color: #000000;
+	float: $float;
+	@if ($debug){
+		margin: 0 20px 20px 0;
+	}
+	@else{
+		margin: 20px 0 10px 0;
+	}
+}
+/////////////////////////////////////////////
+
+body{
+	background-color: $backgroundPage;
+}
+caption{
+	color: #000000;
+	text-align: right;
+}
+#content {
+  width: 960px;
+  margin: 0 auto;
+  background: $contentBackground;
+  padding: $padding*2;
+  color: $text;
+	h1, h2{
+		color: $h2;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+		text-align: left;
+	}
+	a{
+		color:$link;
+	}
+	p{
+		margin-bottom: $margin;
+	}
+}
+
+img{
+	border: 2px solid $h2;
+	padding: $padding/5;
+	&.img-left{
+		float: left;
+		margin: 0 $margin*2 $margin/2 0;
+	}
+	&.img-right{
+		float: right;
+		margin: 0 0 $margin $margin/2;
+	}
+}
+
+div{
+	.brief{
+		@include brief($width, $quote);
+	}
+}
+//////////////////////////////////////////////form
+form{
+	input[value], textarea, label{
+		color:#808080;
+		margin: $margin/2;
+	}
+	input{
+		height: 30px;
+	}
+	label{
+		color:$form;
+	}
+	textarea, input{
+		width: 100%;
+	}
+	div{
+		display: inline-block;
+	}
+	.mainInfo1, .mainInfo2{
+		width: 49.5%;
+	}
+	.mainInfo1{
+		float: left;
+	}
+	.mainInfo2{
+		float: right;
+	}
+	button{
+		width: 25%;
+		color: $bth;
+		border: 0.5px solid $bth;
+		margin: $margin/2;
+		background-color: $contentBackground;
+		height: 40px;
+	}
+}
+
+input[value], textarea{
+	border: 0.5px solid $tableHead;
+}
+
+
+////////////////////////////////////////////////tables
+
+
+th {
+	background-color: $tableHead;
+	color: black;
+	text-align: left;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+th, td{
+	text-indent: 20px;
+	letter-spacing: 0.1px;
+	height: 40px;
+}
+td{
+    background-color: $table;
+}

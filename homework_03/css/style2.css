@@ -1,0 +1,85 @@
+body {
+  background-color: rgba(198, 238, 252, 0.53); }
+
+caption {
+  color: #000000;
+  text-align: right; }
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  background: #3b3b3b;
+  padding: 20px;
+  color: #ffffff; }
+  #content h1, #content h2 {
+    color: #fccd10; }
+  #content h1 {
+    text-align: center; }
+  #content h2 {
+    text-align: left; }
+  #content a {
+    color: #f5c70f; }
+  #content p {
+    margin-bottom: 10px; }
+
+img {
+  border: 2px solid #fccd10;
+  padding: 2px; }
+  img.img-left {
+    float: left;
+    margin: 0 20px 5px 0; }
+  img.img-right {
+    float: right;
+    margin: 0 0 10px 5px; }
+
+div .brief {
+  background-color: #fff178;
+  width: 96%;
+  display: block;
+  padding: 20px;
+  color: #000000;
+  float: inherit;
+  margin: 20px 0 10px 0; }
+
+form input[value], form textarea, form label {
+  color: #808080;
+  margin: 5px; }
+form input {
+  height: 30px; }
+form label {
+  color: #f5c70f; }
+form textarea, form input {
+  width: 100%; }
+form div {
+  display: inline-block; }
+form .mainInfo1, form .mainInfo2 {
+  width: 49.5%; }
+form .mainInfo1 {
+  float: left; }
+form .mainInfo2 {
+  float: right; }
+form button {
+  width: 25%;
+  color: #f5c70f;
+  border: 0.5px solid #f5c70f;
+  margin: 5px;
+  background-color: #3b3b3b;
+  height: 40px; }
+
+input[value], textarea {
+  border: 0.5px solid #94a34e; }
+
+th {
+  background-color: #94a34e;
+  color: black;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+th, td {
+  text-indent: 20px;
+  letter-spacing: 0.1px;
+  height: 40px; }
+
+td {
+  background-color: #677d01; }
