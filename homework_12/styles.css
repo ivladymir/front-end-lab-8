@@ -1,0 +1,45 @@
+*{
+	border: 1px solid black;
+}
+body{
+	background-color: #1C1C1F;
+}
+.headline{
+	color: #A19E86;
+}
+a{
+	min-height: 100vh;
+}
+a:hover{
+	background-color: #2C2C2C;
+}
+.item{
+	height: 150px;
+	width: 200px;
+	display: inline-block;
+	margin: 0.5%;
+}
+.preview{
+	width: 98%;
+	height: 98%;
+	margin: 0 auto;
+}
+
+.detais{
+	padding-left: 15%;
+	height: 20px;
+	margin: 0;
+}
+.country, .level, .model{
+	display: inline-block;
+}
+.level, .model{
+	text-transform: uppercase;
+	color: #D7D2B7;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
